@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复古卡西欧计算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <!-- 显示屏 -->
+            <div class="display">
+                <div class="display-content">
+                    <div class="history" id="history">0</div>
+                    <div class="current" id="current">0</div>
+                </div>
+            </div>
+            
+            <!-- 按钮区域 -->
+            <div class="buttons">
+                <!-- 第一行：功能键 -->
+                <button class="btn function" data-action="shift">SHIFT</button>
+                <button class="btn function" data-action="alpha">ALPHA</button>
+                <button class="btn function" data-action="replay">REPLAY</button>
+                <button class="btn function" data-action="mode">MODE</button>
+                <button class="btn function" data-action="on">ON</button>
+                
+                <!-- 第二行：科学函数 -->
+                <button class="btn scientific" data-action="power">x^y</button>
+                <button class="btn scientific" data-action="log">log</button>
+                <button class="btn scientific" data-action="ln">ln</button>
+                <button class="btn scientific" data-action="negative">(-)</button>
+                <button class="btn scientific" data-action="more">...</button>
+                
+                <!-- 第三行：三角函数 -->
+                <button class="btn scientific" data-action="sin">sin</button>
+                <button class="btn scientific" data-action="cos">cos</button>
+                <button class="btn scientific" data-action="tan">tan</button>
+                <button class="btn function" data-action="rcl">RCL</button>
+                <button class="btn function" data-action="eng">ENG</button>
+                
+                <!-- 第四行：特殊功能 -->
+                <button class="btn function" data-action="frac">ab/c</button>
+                <button class="btn function" data-action="hyp">hyp</button>
+                <button class="btn function" data-action="sd">S-D</button>
+                <button class="btn function" data-action="sto">STO</button>
+                <button class="btn operator" data-action="delete">DEL</button>
+                
+                <!-- 数字键盘 -->
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-action="multiply">×</button>
+                
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator" data-action="subtract">-</button>
+                
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn operator" data-action="add">+</button>
+                
+                <button class="btn number" data-value="0">0</button>
+                <button class="btn number" data-value=".">.</button>
+                <button class="btn equals" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
